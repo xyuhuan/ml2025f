@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業使用 3D Slicer 擴增資料集讓我感到挺意外的，沒想到這款工具不只可以瀏覽 3D 醫學影像，還能直接進行資料增強，相當方便，我也學到了另一種標註工具 Labelme 的使用方式，對影像標註流程有了更深入的了解，在處理心臟影像的過程中，也讓我更清楚地認識了主動脈瓣膜的位置與相關結構。
     </div>
   </div>
 
@@ -169,14 +169,20 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 將06_ct.nii.gz 透過3D Slicer 還原成233切的 .dcm檔，將含有主動脈瓣的 .dcm壓縮成 dcm.zip 透過 Colab 轉成 .png檔。<br>
+              使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+              將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。
+          </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>	Medium baseline - 將06_ct.nii.gz 透過3D Slicer 擴充圖片至64張。<br>
+                使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+                將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。
+          </td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
@@ -184,9 +190,12 @@
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
-          <td>沒有寫100字心得</td>
+          <td>Strong baseline - 上傳整理完的一份 .txt 檔至 github<br>
+              AP 分數，名列全班前20名。(1pt)<br>
+              AP 分數，名列全班前10名。(1pt)
+          </td>
         </tr>
 
       </table>
@@ -197,7 +206,7 @@
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <iframe width="100%" height="560" src="https://www.youtube.com/embed/yndAvlBxpBE?si=fqBcNDJqZ2-TGTol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </video>
     </div>
   </div>
@@ -252,3 +261,4 @@
 
 </body>
 </html>
+
